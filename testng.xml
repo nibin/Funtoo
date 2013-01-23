@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Funtoo Test Suite" verbose="1">
+
+
+	<test name="Funtoo Unit Tests">
+		<packages>
+			<package name="com.nvarghese.funtoo.*" />
+		</packages>
+	</test>
+
+	<test name="Funtoo Integration Tests">
+		<packages>
+			<package name="integration.funtoo.*" />
+		</packages>
+	</test>
+
+</suite>
+
+

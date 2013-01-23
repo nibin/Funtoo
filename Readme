@@ -1,0 +1,12 @@
+README
+=======
+
+This project uses cryptographic libraries from bouncycastle. By default, java restricts symmetric
+encryption to key size of 32 bits. If support is required for more than 32 bits (upto 256 bits), then
+two changes should be done.
+
+ 1. Add BCprovider "security.provider.9=org.bouncycastle.jce.provider.BouncyCastleProvider" 
+    in master providers properties file "/etc/java-6-sun/security/java.security"
+ 2. Copy the jce unrestricted cryptographic libraries(two jars) in 
+ "/usr/lib/jvm/default-java/jre/lib/security"
+ 
